@@ -1,0 +1,10 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15% 10px;
+    
+}

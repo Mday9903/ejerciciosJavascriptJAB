@@ -1,0 +1,56 @@
+body{
+    font-family:'Montserrat', sans-serif;
+}
+img {
+    width: 100%;
+}
+section{
+    display: flex;
+    width: auto;
+    align-items: flex-end;
+}
+.fase0{
+    width: 150px;
+    background-color: #cddc39;
+    border: 6px green solid;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.fase1{ 
+    width: 150px;
+    background-color: #2D74FF;
+    border: none;
+    border-radius: none;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.fase2{ 
+    width: 150px;
+    background-color: #9c27b0;
+    font-size: 1em;
+    border: none;
+    border-radius: 0;
+    padding: 6px;
+    color: white;
+}
+
+.descripcion{
+    text-align: center;
+}
+
+.precio{
+    font-family: 'Glegoo', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    flex:1;
+    padding-left:4px ;
+}
+
+.imagen{
+    width: 50%;
+}
+
+

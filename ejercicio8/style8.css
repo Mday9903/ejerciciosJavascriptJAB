@@ -1,0 +1,92 @@
+
+       *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Montserrat;
+        }
+        body{
+            margin:4px;
+            padding: 20px;
+        }
+
+        .monedas,.img-monedas{
+            margin:0 0 5px 20px ;
+            font-weight: bold;
+        }
+        .img-monedas{
+            display: flex;
+            width: 25px;
+        }
+
+        .img-monedas img {
+            margin-left: 3px;
+        }
+
+        span{
+            margin-left: 5px;
+            color: red;
+            font-size:1.5em;
+        }
+
+        .boton{
+            padding:1px 7px;
+        }
+        input{
+            width:calc(100% - 4px);
+            margin:3px 0 2px;
+            padding:3px;
+            border: 1.5px solid black;
+        }
+        img{
+            width:100%;
+            vertical-align:top;
+        }
+        .contenido{
+            display:flex;
+            flex-wrap:wrap;
+            padding:7px;
+        }
+
+        .informacion{
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .cuadro{
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            border:1px solid black;
+            text-align: center;
+            line-height:50px;
+            font-size:2.5em;
+            margin:5px;
+            color:white;
+            font-weight:bold;
+        }
+        .circulo-rojo, .circulo-verde{
+            width: 60px;
+            height: 60px;
+            margin-left: 10px;
+            background-color:red;
+            border-radius: 50%;
+            border: 1.5px solid black;
+            text-align: center;
+            line-height: 55px;
+            font-size: 3em;
+            font-weight: bold;
+            color: white;
+        }
+        .circulo-verde {
+            background-color: green;
+        }
+
+
+       
+        .monedas img{
+            width:23px;
+            margin:2px;
+        }
+       
+    

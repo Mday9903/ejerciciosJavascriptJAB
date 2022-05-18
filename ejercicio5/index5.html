@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flecha{
+            font-size: 4em;
+            width: 200px;
+            height: 200px;
+        }
+        .porcentaje{
+            font-size: 2em;
+        }
+        .boton1{
+            width: 200px;
+            height: 200px;
+            background-image: url("./fondoBoton.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            text-align: center;
+            user-select: none;/*Para que no se seleccione la flecha cuando le hacemos doble click*/
+        }
+
+    </style>
+    <script>
+        window.onload = inicio;
+
+        var grados = 0;
+        var sumar = true;
+
+        function inicio () {
+            document.querySelector(".boton1").onclick = girar;
+            
+        }
+
+        function girar(){
+            if (sumar) { 
+                grados += 20;
+            } else if (!sumar){
+                grados -= 20;
+            }
+            
+            // console.log(grados);
+
+            document.querySelector(".flecha").style.transform = `rotate(${grados}deg)`;
+            
+            if (grados === 0 || grados === 360){
+                document.querySelector(".porcentaje").innerHTML= "0°";
+                sumar = !sumar;
+            } else {
+                document.querySelector(".porcentaje").innerHTML= grados + "°";
+            }
+
+            // if (grados === 360){
+            //     document.querySelector(".porcentaje").innerHTML= "0°";
+            //     sumar = false;
+            // } else if (grados === 0){
+            //     document.querySelector(".porcentaje").innerHTML= "0°";
+            //     sumar = true;
+            // } else{
+            //     document.querySelector(".porcentaje").innerHTML= grados + "°";
+            // }
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    <div class="boton1">
+        <div class="flecha">▲</div>
+        <div class="porcentaje">0</div>
+    </div>
+</body>
+</html>
